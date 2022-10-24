@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --body-color:linear-gradient(216deg,#b621fe,#1fd1f9);
+
+}
+
+.main-container{
+    min-height: 100vh;
+    background-image:var(--body-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.helper{
+    display: flex;
+    /* padding: 1rem; */
+    /* border :1px solid darkblue */
+}
+input{
+    height: 50px;
+    width: 70%;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    transition: width 0.3s linear;
+     
+}
+
+
+.main-container .helper .img-container i{
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    padding: 12px 0px 0px 2px;
+    cursor: pointer;
+    padding-left: 10px;
+    /* transition: hover 0.5s linear; */
+
+}
+.main-container .helper .img-container i:hover{
+    color: rgb(91, 84, 84);
+}
+
+.hide-ip{
+    width: 0px;
+    padding: 0px;
+}
+.footer{
+border-top :1px solid white; 
+    background-color: rgb(23, 77, 255);
+    text-align: center;
+    min-height: 30px;
+    padding: 4px;
+    color: white;
+}
+.footer a{
+    color: aliceblue;
+}
