@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded",function(){
     // toggling class
     btn.addEventListener("click",function(){
         inputField.classList.toggle("hide-ip")
+        btn.classList.toggle("translate-btn");
 
     });
 });

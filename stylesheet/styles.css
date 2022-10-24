@@ -16,34 +16,38 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5rem;
 }
 
 .helper{
     display: flex;
-    /* padding: 1rem; */
-    /* border :1px solid darkblue */
+    /* border: 2px solid black; */
+
+
 }
 input{
     height: 50px;
-    width: 70%;
-    padding-left: 1rem;
+    width: 100%;
     font-size: 1.2rem;
     letter-spacing: 2px;
     outline: none;
     border: none;
-    transition: width 0.3s linear;
+    transition: opacity 0.4s linear;
+    transition: width 0.5s linear;
+
+
+    padding-left:10px 
      
 }
 
 
-.main-container .helper .img-container i{
+.main-container  .img-container i{
     background-color: white;
     height: 50px;
     width: 50px;
-    padding: 12px 0px 0px 2px;
-    cursor: pointer;
-    padding-left: 10px;
-    /* transition: hover 0.5s linear; */
+    padding: 12px 0px 0px 12px;
+    cursor: pointer;  
+    transition: transform 0.2s linear;
 
 }
 .main-container .helper .img-container i:hover{
@@ -51,8 +55,11 @@ input{
 }
 
 .hide-ip{
-    width: 0px;
-    padding: 0px;
+     /* width: 0px;  */
+    opacity: 0;
+    transition: opacity 0.1s linear;
+
+
 }
 .footer{
 border-top :1px solid white; 
@@ -64,4 +71,8 @@ border-top :1px solid white;
 }
 .footer a{
     color: aliceblue;
+}
+
+.translate-btn{
+    transform: translateX(-200%);
 }
